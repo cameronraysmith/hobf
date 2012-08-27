@@ -3,3 +3,6 @@ bin/
 *.native
 *.byte
 *.opt
+.paths
+.project
+.settings/
