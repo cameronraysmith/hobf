@@ -1,5 +1,4 @@
 "src": include
-"src/calc": include
 "src/boolfunc": include
 "src/higherorder": include
 "tests": include
