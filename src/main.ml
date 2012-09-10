@@ -12,7 +12,7 @@ let boolpairs =
 (* - : ('a * 'b) list -> ('a -> 'b -> 'c) list -> 'c list list = <fun> *)
 let mapfunslist listin listfunc =
 	List.map
-		(fun f -> List.map (fun boolTup -> f (fst boolTup) (snd boolTup)) listin)
+		(fun f -> List.map (fun boolTup -> Higherorder.hobf f (fst boolTup) (snd boolTup)) listin)
 		listfunc
 
 (* - : bool list list -> unit = <fun> *)
