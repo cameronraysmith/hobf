@@ -2,10 +2,11 @@ module Hobf where
 
 import qualified Prelude
 
-__ :: any
-__ = Prelude.error "Logical or arity value used"
+data Bool =
+   True
+ | False
 
-hobf_exist :: ()
-hobf_exist =
-  __
+hobf :: (Bool -> Bool -> Bool) -> Bool -> Bool -> Bool
+hobf bf b1 b2 =
+  bf b1 b2
 

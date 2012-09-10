@@ -1,4 +1,6 @@
-type __ = Obj.t
+type bool =
+| True
+| False
 
-val hobf_exist : __
+val hobf : (bool -> bool -> bool) -> bool -> bool -> bool
 

@@ -1,8 +1,9 @@
-type __ = Obj.t
-let __ = let rec f _ = Obj.repr f in Obj.repr f
+type bool =
+| True
+| False
 
-(** val hobf_exist : __ **)
+(** val hobf : (bool -> bool -> bool) -> bool -> bool -> bool **)
 
-let hobf_exist =
-  __
+let hobf bf b1 b2 =
+  bf b1 b2
 
